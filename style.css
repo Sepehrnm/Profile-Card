@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;600;700&family=Jost:wght@400;500;600;700&display=swap");
+
+:root {
+    --grey: #e9e8ee;
+    --darkblue: #026080;
+    --darkgrey: rgb(226, 226, 226);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Jost;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.cardContainer {
+    background-color: var(--grey);
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #ccc, -3px -3px 5px #fff;
+    color: var(--darkblue);
+    padding-top: 30px;
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.cardContainer:hover {
+    box-shadow: 7px 7px 10px #ccc, -7px -7px 10px #fff;
+}
+
+.developingLevel {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-weight: bold;
+    color: var(--grey);
+    background: var(--darkblue);
+    font-size: 14px;
+    border-radius: 3px;
+    padding: 3px 8px;
+}
+
+.cardContainer .pic {
+    box-shadow: 2px 2px 4px #ccc, -3px -3px 5px #fff;
+    border-radius: 50%;
+    padding: 4px;
+    width: 130px;
+    height: 100px;
+}
+
+.cardContainer h2 {
+    margin: 10px 0;
+}
+
+.cardContainer p {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.buttonContainer {
+    margin: 35px 0;
+}
+
+.buttonContainer button {
+    background: var(--darkblue);
+    border: 1px solid var(--darkblue);
+    color: var(--grey);
+    border-radius: 3px;
+    padding: 8px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.buttonContainer .secondary {
+    background: var(--grey);
+    color: var(--darkblue);
+}
+
+.buttonContainer .primary:hover {
+    background: var(--grey);
+    color: var(--darkblue);
+}
+
+.buttonContainer .secondary:hover {
+    background: var(--darkblue);
+    color: var(--grey);
+}
+
+.skills {
+    background: var(--darkgrey);
+    padding: 20px;
+    text-align: left;
+}
+
+.skills h4 {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.skills ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skills ul li {
+    border: 1px solid var(--darkblue);
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px;
+    margin: 0 5px 10px 0;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.skills ul li:hover {
+    background: var(--darkblue);
+    color: var(--grey);
+}
